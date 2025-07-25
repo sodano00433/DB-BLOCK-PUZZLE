@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  width: 360px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+header img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+#game-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 3px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.grid-cell.filled {
+  background: #f97316; /* orange */
+}
+
+#pieces-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.piece {
+  display: grid;
+  gap: 3px;
+  cursor: grab;
+  user-select: none;
+}
+
+.piece-cell {
+  width: 25px;
+  height: 25px;
+  background: #2563eb; /* blue */
+  border-radius: 4px;
+}
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #b91c1c; /* red */
+}
